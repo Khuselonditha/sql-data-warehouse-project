@@ -18,7 +18,7 @@ CREATE TABLE bronze.crm_prd_info(
     prd_cost INT,
     prd_line NVARCHAR(50),
     prd_start_dt DATE,
-    prd_end_dt DATE,
+    prd_end_dt DATE
 );
 GO
 
@@ -32,5 +32,13 @@ CREATE TABLE bronze.crm_sales_details(
     sls_due_dt INT,
     sls_sales INT,
     sls_quantity INT,
-    sls_price INT,
+    sls_price INT
+);
+GO
+
+-- Create the 'CUST_AZ12' table
+CREATE TABLE bronze.erp_cust_az12(
+    cid NVARCHAR(50),
+    bdate DATE,
+    gen NVARCHAR(50)
 );
