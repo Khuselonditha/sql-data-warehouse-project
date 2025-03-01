@@ -11,7 +11,7 @@ CREATE TABLE bronze.crm_cust_info(
 GO
 
 -- Create the 'prd_info' table
-CREATE TABLE bronze.prd_info(
+CREATE TABLE bronze.crm_prd_info(
     prd_id INT,
     prd_key NVARCHAR(50),
     prd_nm NVARCHAR(50),
@@ -23,7 +23,7 @@ CREATE TABLE bronze.prd_info(
 GO
 
 -- Create the 'sales_details' table
-CREATE TABLE bronze.sales_details(
+CREATE TABLE bronze.crm_sales_details(
     sls_ord_num NVARCHAR(50),
     sls_prd_key NVARCHAR(50),
     sls_cust_id INT,
