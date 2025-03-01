@@ -20,3 +20,17 @@ CREATE TABLE bronze.prd_info(
     prd_start_dt DATE,
     prd_end_dt DATE,
 );
+GO
+
+-- Create the 'sales_details' table
+CREATE TABLE bronze.sales_details(
+    sls_ord_num NVARCHAR(50),
+    sls_prd_key NVARCHAR(50),
+    sls_cust_id INT,
+    sls_order_dt INT,
+    sls_ship_dt INT,
+    sls_due_dt INT,
+    sls_sales INT,
+    sls_quantity INT,
+    sls_price INT,
+);
