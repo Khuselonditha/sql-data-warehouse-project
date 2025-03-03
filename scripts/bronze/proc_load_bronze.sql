@@ -35,6 +35,9 @@ WITH (
 );
 
 
+-- Delete/truncate all rows of the 'bronze.erp_cust_az12' table
+TRUNCATE TABLE bronze.erp_cust_az12;
+
 -- Insert data to the 'bronze.erp_cust_az12' table
 BULK INSERT bronze.erp_cust_az12
 FROM "Z:\home\khuselo\my_work\side_things\sql-data-warehouse-project\datasets\source_erp\CUST_AZ12.csv"
