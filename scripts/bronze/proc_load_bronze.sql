@@ -10,6 +10,9 @@ WITH (
     TABLOCK
 );
 
+-- Delete/truncate all rows of the 'bronze.crm_prd_info' table
+TRUNCATE TABLE bronze.crm_prd_info;
+
 -- Insert data to the 'bronze.crm_prd_info' table
 BULK INSERT bronze.crm_prd_info
 FROM "Z:\home\khuselo\my_work\side_things\sql-data-warehouse-project\datasets\source_crm\prd_info.csv"
