@@ -58,3 +58,12 @@ WITH (
     FIELDTERMINATOR = ',',
     TABLOCK
 );
+
+-- Insert data to the 'bronze.px_cat_g1v2' table
+BULK INSERT bronze.erp_px_cat_g1v2
+FROM "Z:\home\khuselo\my_work\side_things\sql-data-warehouse-project\datasets\source_erp\PX_CAT_G1V2.csv"
+WITH (
+    FIRST_ROW = 2,
+    FIELDTERMINATOR = ',',
+    TABLOCK
+);
