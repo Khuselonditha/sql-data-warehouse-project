@@ -47,6 +47,9 @@ WITH (
     TABLOCK
 );
 
+-- Delete/truncate all rows of the 'bronze.erp_loc_a101' table
+TRUNCATE TABLE bronze.erp_loc_a101;
+
 -- Insert data to the 'bronze.erp_loc_a101' table
 BULK INSERT bronze.erp_loc_a101
 FROM "Z:\home\khuselo\my_work\side_things\sql-data-warehouse-project\datasets\source_erp\LOC_A101.csv"
