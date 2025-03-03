@@ -21,3 +21,12 @@ WITH (
     FIELDTERMINATOR = ',',
     TABLOCK
 );
+
+-- Insert data to the 'bronze.crm_sales_details' table
+BULK INSERT bronze.crm_sales_details
+FROM "Z:\home\khuselo\my_work\side_things\sql-data-warehouse-project\datasets\source_crm\sales_details.csv"
+WITH (
+    FIRST_ROW = 2,
+    FIELDTERMINATOR = ',',
+    TABLOCK
+);
