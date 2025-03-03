@@ -33,3 +33,13 @@ WITH (
     FIELDTERMINATOR = ',',
     TABLOCK
 );
+
+
+-- Insert data to the 'bronze.erp_cust_az12' table
+BULK INSERT bronze.erp_cust_az12
+FROM "Z:\home\khuselo\my_work\side_things\sql-data-warehouse-project\datasets\source_erp\CUST_AZ12.csv"
+WITH (
+    FIRST_ROW = 2,
+    FIELDTERMINATOR = ',',
+    TABLOCK
+);
